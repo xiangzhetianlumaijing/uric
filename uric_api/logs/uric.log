@@ -1,0 +1,44 @@
+INFO 2021-11-10 21:34:54,439 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 21:50:52,104 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 21:50:53,192 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 21:51:24,145 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 21:51:24,910 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 21:53:47,804 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 21:53:48,633 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 21:54:38,622 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 21:54:39,439 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:01:55,172 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:01:56,032 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:10:55,232 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\users\urls.py changed, reloading.
+INFO 2021-11-10 22:10:56,201 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:15:12,270 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:15:12,997 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:16:50,430 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:16:51,179 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:18:12,464 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:18:13,193 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:39:00,281 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:39:01,040 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:39:14,952 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:39:15,740 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:48:02,819 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:48:03,597 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:49:16,395 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:49:17,205 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:55:01,131 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 22:55:01,986 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 22:55:09,435 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-10 23:11:08,203 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:11:25,823 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:11:52,086 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:12:11,406 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:13:49,204 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:14:27,468 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:14:53,112 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:23:55,006 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 23:23:55,792 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 23:24:09,884 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-10 23:24:10,679 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-10 23:24:21,512 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-10 23:24:21,718 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-10 23:25:22,821 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201

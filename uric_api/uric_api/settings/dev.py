@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import datetime
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -25,12 +26,14 @@ SECRET_KEY = 'django-insecure-5yr0)0vt*)8m%l1#a)abr-7*p#ye8!%93ymg$l5t0^%1mo&d#b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 允许客户端通过api.uric.cn这个域名访问Django项目
+ALLOWED_HOSTS = ["api.uric.cn", "127.0.0.1", ]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'simpleui', # 必须写在django.contrib.admin之前
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'home',
+    'uric_api.apps.users',
 ]
 
 MIDDLEWARE = [
@@ -117,9 +120,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
+# 修改使用中文界面
+LANGUAGE_CODE = 'zh-Hans'
 
-TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
+# 修改时区
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -197,14 +204,33 @@ LOGGING = {
 
 # 异常处理
 REST_FRAMEWORK = {
+    # 自定义异常处理
     'EXCEPTION_HANDLER': 'uric_api.utils.exceptions.custom_exception_handler',
+    # 自定义认证
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        # jwt认证
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        # session认证
+        'rest_framework.authentication.SessionAuthentication',
+
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+}
+
+JWT_AUTH = {
+    # jwt的有效时间
+    'JWT_EXPIRATION_DELTA': datetime.timedelta(days=1),
+    # 'JWT_RESPONSE_PAYLOAD_HANDLER': 'users.utils.jwt_response_payload_handler',
+    'JWT_ALLOW_REFRESH': True,  # 这个参数要为True，才能刷新token
 }
 
 # CORS组的配置信息
 CORS_ORIGIN_WHITELIST = (
     #'www.uric.cn:8080', # 如果这样写不行的话，就加上协议(http://www.uric.cn:8080，因为不同的corsheaders版本可能有不同的要求)
-    'http://www.uric.cn:8080', # 这个就是主机配置的域名映射
+    # 'http://www.uric.cn:8080',  # 这个就是主机配置的域名映射
+    'http://127.0.0.1:8082',
 )
 CORS_ALLOW_CREDENTIALS = False  # 是否允许ajax跨域请求时携带cookie，False表示不用，后面也用不到cookie，所以关掉它就可以了，以防有人通过cookie来搞网站
-# 允许客户端通过api.uric.cn这个域名访问Django项目
-ALLOWED_HOSTS = ["api.uric.cn",]
+
+# 设置Auth认证模块使用的用户模型为自己定义的用户模型
+AUTH_USER_MODEL = 'users.User'

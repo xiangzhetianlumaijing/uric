@@ -17,3 +17,7 @@ axios.defaults.withCredentials = false;  //是否在ajax请求时允许携带coo
 axios.defaults.baseURL = settings.host;
 axios.defaults.timeout = 3000;
 Vue.prototype.$axios = axios;
+
+import Antd from 'ant-design-vue';
+Vue.use(Antd);
+import 'ant-design-vue/dist/antd.css';
