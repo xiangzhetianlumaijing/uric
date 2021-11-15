@@ -13,12 +13,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from . import views
+from rest_framework_jwt.views import obtain_jwt_token, verify_jwt_token, refresh_jwt_token
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path("", include("uric_api.apps.home.urls")),
-    path("users/", include("uric_api.apps.users.urls")),
-    path("host/", include("uric_api.apps.host.urls")),
+    path('categorys/', views.HostCategoryListAPIView.as_view()),  # 主机分类数据
+    path('list/', views.HostModelViewSet.as_view({'get': 'list', 'post': 'create'})),  # 主机数据
+
 ]

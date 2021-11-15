@@ -23,6 +23,7 @@
           </a-sub-menu>
         </template>
 
+
       </a-menu>
     </a-layout-sider>
     <a-layout>
@@ -41,7 +42,6 @@
     </a-layout>
   </a-layout>
 </template>
-
 <script>
 export default {
   name: "Base",
@@ -96,8 +96,7 @@ export default {
   },
 }
 </script>
-
-<style scoped>
+<style>
 #components-layout-demo-custom-trigger .trigger {
   font-size: 18px;
   line-height: 64px;

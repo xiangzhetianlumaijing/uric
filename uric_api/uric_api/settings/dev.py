@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'uric_api.apps.users',
+    'uric_api.apps.host',
 ]
 
 MIDDLEWARE = [
@@ -234,3 +235,5 @@ CORS_ALLOW_CREDENTIALS = False  # 是否允许ajax跨域请求时携带cookie，
 
 # 设置Auth认证模块使用的用户模型为自己定义的用户模型
 AUTH_USER_MODEL = 'users.User'
+
+DEFAULT_KEY_NAME = "global"

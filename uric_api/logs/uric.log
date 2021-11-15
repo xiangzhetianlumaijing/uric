@@ -42,3 +42,115 @@ INFO 2021-11-10 23:24:10,679 autoreload:637 Watching for file changes with StatR
 INFO 2021-11-10 23:24:21,512 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
 INFO 2021-11-10 23:24:21,718 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
 INFO 2021-11-10 23:25:22,821 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-11 16:32:36,254 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-11 16:52:30,757 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-11 16:52:45,996 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-11 16:52:46,228 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-15 09:31:50,007 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 09:36:13,673 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-15 09:36:13,863 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-15 09:54:07,681 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-15 10:15:38,472 basehttp:161 "OPTIONS /host/category HTTP/1.1" 200 0
+INFO 2021-11-15 10:15:38,472 basehttp:161 "OPTIONS /host/host HTTP/1.1" 200 0
+WARNING 2021-11-15 10:15:38,718 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:15:38,720 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:15:38,720 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:15:38,721 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:20:30,783 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:20:30,783 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:20:30,785 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:20:30,786 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:21:11,595 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:21:11,599 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:21:11,600 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:21:11,601 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:21:37,200 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:21:37,203 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:21:37,205 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:21:37,206 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+INFO 2021-11-15 10:23:14,979 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+WARNING 2021-11-15 10:23:20,677 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:23:20,678 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:23:20,679 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:23:20,679 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:30:45,098 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:30:45,145 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:30:45,150 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:30:45,168 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:31:27,123 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:31:27,124 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:31:27,125 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:31:27,125 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+WARNING 2021-11-15 10:31:29,362 log:230 Not Found: /host/category
+WARNING 2021-11-15 10:31:29,363 log:230 Not Found: /host/host
+WARNING 2021-11-15 10:31:29,364 basehttp:161 "GET /host/category HTTP/1.1" 404 2375
+WARNING 2021-11-15 10:31:29,364 basehttp:161 "GET /host/host HTTP/1.1" 404 2363
+INFO 2021-11-15 13:48:13,980 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-15 13:48:14,831 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:01:45,374 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-15 14:01:47,911 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:02:30,949 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:02:57,847 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\apps.py changed, reloading.
+INFO 2021-11-15 14:02:58,639 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:08:35,233 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\models.py changed, reloading.
+INFO 2021-11-15 14:08:35,973 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:11:01,964 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\views.py changed, reloading.
+INFO 2021-11-15 14:11:02,694 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:13:31,894 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\urls.py changed, reloading.
+INFO 2021-11-15 14:13:32,614 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:14:33,504 basehttp:161 "OPTIONS /host/category HTTP/1.1" 200 0
+INFO 2021-11-15 14:14:33,505 basehttp:161 "OPTIONS /host/host HTTP/1.1" 200 0
+WARNING 2021-11-15 14:14:33,531 log:230 Not Found: /host/category
+WARNING 2021-11-15 14:14:33,533 log:230 Not Found: /host/host
+WARNING 2021-11-15 14:14:33,533 basehttp:161 "GET /host/category HTTP/1.1" 404 2694
+WARNING 2021-11-15 14:14:33,534 basehttp:161 "GET /host/host HTTP/1.1" 404 2682
+INFO 2021-11-15 14:16:00,794 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\urls.py changed, reloading.
+INFO 2021-11-15 14:16:01,549 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:16:15,651 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\urls.py changed, reloading.
+INFO 2021-11-15 14:16:16,393 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:16:17,303 basehttp:161 "GET /host/category HTTP/1.1" 301 0
+INFO 2021-11-15 14:16:17,303 basehttp:161 "GET /host/host HTTP/1.1" 301 0
+INFO 2021-11-15 14:16:17,365 basehttp:161 "OPTIONS /host/category/ HTTP/1.1" 200 0
+INFO 2021-11-15 14:16:17,365 basehttp:161 "OPTIONS /host/host/ HTTP/1.1" 200 0
+ERROR 2021-11-15 14:16:17,420 exceptions:28 [<uric_api.apps.host.views.HostModelViewSet object at 0x0000020004DC66C8>] <built-in function exec>
+ERROR 2021-11-15 14:16:17,421 log:230 Insufficient Storage: /host/host/
+ERROR 2021-11-15 14:16:17,422 exceptions:28 [<uric_api.apps.host.views.HostCategoryListAPIView object at 0x0000020004DC6748>] <built-in function exec>
+ERROR 2021-11-15 14:16:17,424 log:230 Insufficient Storage: /host/category/
+ERROR 2021-11-15 14:16:17,424 basehttp:161 "GET /host/host/ HTTP/1.1" 507 43
+ERROR 2021-11-15 14:16:17,427 basehttp:161 "GET /host/category/ HTTP/1.1" 507 43
+INFO 2021-11-15 14:28:51,009 basehttp:161 "GET /host/category/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:28:51,031 basehttp:161 "GET /host/host/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:29:11,400 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-15 14:29:11,610 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-15 14:29:17,341 basehttp:161 "GET /host/category/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:29:17,343 basehttp:161 "GET /host/host/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:39:57,345 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\models.py changed, reloading.
+INFO 2021-11-15 14:39:58,079 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:51:18,566 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-15 14:51:19,311 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:53:56,825 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:55:39,992 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\utils\key.py changed, reloading.
+INFO 2021-11-15 14:55:40,862 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:56:00,372 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\utils\key.py changed, reloading.
+INFO 2021-11-15 14:56:01,241 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 14:57:35,462 basehttp:161 "GET /host/category/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:57:35,462 basehttp:161 "GET /host/host/ HTTP/1.1" 200 2
+INFO 2021-11-15 14:59:28,193 basehttp:161 "OPTIONS /host/categorys HTTP/1.1" 200 0
+INFO 2021-11-15 14:59:28,196 basehttp:161 "OPTIONS /host/list HTTP/1.1" 200 0
+WARNING 2021-11-15 14:59:28,209 log:230 Not Found: /host/list
+WARNING 2021-11-15 14:59:28,211 log:230 Not Found: /host/categorys
+WARNING 2021-11-15 14:59:28,212 basehttp:161 "GET /host/list HTTP/1.1" 404 2681
+WARNING 2021-11-15 14:59:28,212 basehttp:161 "GET /host/categorys HTTP/1.1" 404 2696
+INFO 2021-11-15 14:59:39,863 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+WARNING 2021-11-15 14:59:44,553 log:230 Not Found: /host/categorys
+WARNING 2021-11-15 14:59:44,554 log:230 Not Found: /host/list
+WARNING 2021-11-15 14:59:44,555 basehttp:161 "GET /host/list HTTP/1.1" 404 2681
+WARNING 2021-11-15 14:59:44,555 basehttp:161 "GET /host/categorys HTTP/1.1" 404 2696
+INFO 2021-11-15 15:00:30,376 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\urls.py changed, reloading.
+INFO 2021-11-15 15:00:31,261 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-15 15:00:32,827 basehttp:161 "GET /host/categorys HTTP/1.1" 301 0
+INFO 2021-11-15 15:00:32,830 basehttp:161 "GET /host/list HTTP/1.1" 301 0
+INFO 2021-11-15 15:00:32,916 basehttp:161 "OPTIONS /host/list/ HTTP/1.1" 200 0
+INFO 2021-11-15 15:00:32,916 basehttp:161 "OPTIONS /host/categorys/ HTTP/1.1" 200 0
+INFO 2021-11-15 15:00:32,958 basehttp:161 "GET /host/list/ HTTP/1.1" 200 2
+INFO 2021-11-15 15:00:32,959 basehttp:161 "GET /host/categorys/ HTTP/1.1" 200 2
