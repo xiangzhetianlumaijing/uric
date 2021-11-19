@@ -6,7 +6,7 @@ from io import StringIO
 
 
 class SSH(object):
-    def __init__(self,hostname, port=SSH_PORT, username='root', pkey=None, password=None, connect_timeout=30):
+    def __init__(self, hostname, port=SSH_PORT, username='root', pkey=None, password=None, connect_timeout=30):
         if pkey is None and password is None:
             raise SSHException('私钥或者密码必须有一个不为空')
 
@@ -27,7 +27,7 @@ class SSH(object):
     def generate_key():
         # 生成公私钥键值对
         key_obj = StringIO()
-        key = RSAKey.generate(2048) # 生成长度为2024的秘钥对
+        key = RSAKey.generate(2048)  # 生成长度为2024的秘钥对
         key.write_private_key(key_obj)
         # 返回值是一个元祖，两个成员分别是私钥和公钥
         return key_obj.getvalue(), 'ssh-rsa ' + key.get_base64()
@@ -65,9 +65,10 @@ class SSH(object):
             return out.decode('GBK')
 
     # 检测连接并获取连接
+    # with 会执行__enter__方法
     def ping(self):
         """ping远程主机，连接成功则返回True"""
-        with self: # self 实际上就是 self.get_client() 的 返回值
+        with self:  # self 实际上就是 self.get_client() 的 返回值
             return True
 
     def put_file_by_fl(self, fl, remote_path, callback=None):
@@ -129,7 +130,10 @@ class SSH(object):
             self.client.set_missing_host_key_policy(AutoAddPolicy)
             # 建立连接
             self.client.connect(**self.arguments)
+            print("self.client创建成功")
+            print(f"self.client={self.client}")
         except AuthenticationException as e:
+            print("self.client没有创建成功")
             return None
 
         return self.client

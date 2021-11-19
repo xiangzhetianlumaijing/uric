@@ -1,7 +1,7 @@
 from rest_framework.generics import ListAPIView,CreateAPIView
 from rest_framework.viewsets import ModelViewSet
-from .models import HostCategory,Host
-from .serializers import HostCategoryModelSeiralizer,HostModelSerializers
+from .models import HostCategory, Host
+from .serializers import HostCategoryModelSeiralizer, HostModelSerializers
 from rest_framework.permissions import IsAuthenticated
 
 

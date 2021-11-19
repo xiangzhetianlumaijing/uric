@@ -1,5 +1,6 @@
 from .ssh import SSH
 
+
 # 用户第一次创建连接某台主机时，校验连接信息的
 def valid_ssh(hostname, port, username, password=None):
     try:

@@ -39,6 +39,7 @@ class HostModelSerializers(serializers.ModelSerializer):
 
     # 添加host记录，如果第一次添加host记录，那么需要我们生成全局的公钥和私钥
     def create(self, validated_data):
+        print("完成验证，进入到'create'方法")
         ip_addr = validated_data.get('ip_addr')
         port = validated_data.get('port')
         username = validated_data.get('username')
@@ -47,6 +48,7 @@ class HostModelSerializers(serializers.ModelSerializer):
         # 生成公私钥和管理主机的公私钥
         # 创建公私钥之前，我们先看看之前是否已经创建过公私钥了
         _cli = SSH(ip_addr, port, username, password=str(password))
+        print("创建完SSH实例")
         try:
             # 尝试从数据库中提取公私钥
             private_key, public_key = AppSetting.get(settings.DEFAULT_KEY_NAME)
@@ -55,17 +57,22 @@ class HostModelSerializers(serializers.ModelSerializer):
             private_key, public_key = _cli.generate_key()
             # 将公钥和私钥保存到数据库中
             AppSetting.set(settings.DEFAULT_KEY_NAME, private_key, public_key, 'ssh全局秘钥对')
+        print("获取到公私钥")
 
         # 上传公钥到服务器中
         try:
             _cli.add_public_key(public_key)
         except Exception as e:
             raise serializers.ValidationError('添加远程主机失败，请检查输入的主机信息!')
+        print("上传了本机的公钥到服务器")
 
-        raise serializers.ValidationError('测试!')
+        # raise serializers.ValidationError('测试!')
+        print("怀疑这个raise有问题")   # 就是这个reise的问题
         # 剔除密码字段，保存host记录
         validated_data.pop('password')
+        print("开始创建主机示例")
         instance = models.Host.objects.create(
             **validated_data
         )
+        print("创建了主机示例")
         return instance
