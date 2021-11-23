@@ -30,6 +30,15 @@
         </a-col>
       </a-row>
 
+<!--      <div class="add_host" style="margin-bottom: 15px;">-->
+<!--        <a-button type="primary" icon="plus" @click="showModal">-->
+<!--          新建-->
+<!--        </a-button>-->
+<!--        <a-button type="primary" icon="import" @click="showExcelModal" style="margin-left: 20px;">-->
+<!--          批量导入-->
+<!--        </a-button>-->
+<!--      </div>-->
+
       <div class="add_host" style="margin-bottom: 15px;">
         <a-button type="primary" icon="plus" @click="showModal">
           新建
@@ -37,7 +46,11 @@
         <a-button type="primary" icon="import" @click="showExcelModal" style="margin-left: 20px;">
           批量导入
         </a-button>
+        <a-button type="primary" icon="export" :href="`${$settings.host}/host/host_excel`" download="主机列表数据.xls" style="margin-left: 20px;">
+          批量导出
+        </a-button>
       </div>
+
       <!-- 新增主机 -->
       <a-modal
           :width="800"
@@ -159,14 +172,22 @@
         </a-modal>
       </div>
       <!-- 主机列表 -->
+<!--      <a-table :columns="columns" :data-source="data" rowKey="id">-->
+<!--        <a slot="name" slot-scope="text">{{ text }}</a>-->
+<!--        <template v-slot:action>-->
+<!--          <a href="javascript:;">编辑</a> |-->
+<!--          <a href="javascript:;">删除</a> |-->
+<!--          <a href="javascript:;">Console</a>-->
+<!--        </template>-->
+<!--      </a-table>-->
       <a-table :columns="columns" :data-source="data" rowKey="id">
-        <a slot="name" slot-scope="text">{{ text }}</a>
-        <template v-slot:action>
-          <a href="javascript:;">编辑</a> |
-          <a href="javascript:;">删除</a> |
-          <a href="javascript:;">Console</a>
-        </template>
+          <span slot="action" slot-scope="record">
+            <a href="javascript:;">编辑</a> |
+            <a href="javascript:;">删除</a> |
+            <router-link :to="`/uric/console/${record.id}`">Console</router-link>
+          </span>
       </a-table>
+
     </a-card>
   </div>
 </template>

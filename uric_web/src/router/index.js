@@ -8,17 +8,11 @@ const routes = [
   {
     path: '/',
     name: 'Login',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../components/Login')
   },
   {
     path: '/uric',
     name: 'Base',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../components/Base'),
     children: [
       {
@@ -30,6 +24,11 @@ const routes = [
         path: 'host',  //访问路径：父级路由 + 当前路由
         name: 'Host',
         component: () => import(/* webpackChunkName: "about" */ '../components/Host')
+      },
+      {
+        path: 'console/:id',
+        name: 'Console',
+        component: () => import(/* webpackChunkName: "about" */ '../components/Console')
       },
     ]
   },

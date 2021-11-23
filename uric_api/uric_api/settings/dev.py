@@ -44,6 +44,9 @@ INSTALLED_APPS = [
     'corsheaders',
     'uric_api.apps.users',
     'uric_api.apps.host',
+    'uric_api.apps.consumer',
+    'channels',
+
 ]
 
 MIDDLEWARE = [
@@ -237,3 +240,17 @@ CORS_ALLOW_CREDENTIALS = False  # 是否允许ajax跨域请求时携带cookie，
 AUTH_USER_MODEL = 'users.User'
 
 DEFAULT_KEY_NAME = "global"
+
+# 配置channel的通道层
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+        'CONFIG': {
+            # "hosts": [('192.168.0.53', 6379)],
+            "hosts": ["redis://:duanwangyue12345678910@192.168.0.53:6379/3"],
+        },
+    },
+}
+
+# 在host应用下面创建一个routing.py文件
+ASGI_APPLICATION = 'uric_api.apps.host.routing.application'

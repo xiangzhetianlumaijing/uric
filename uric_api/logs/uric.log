@@ -244,3 +244,60 @@ INFO 2021-11-19 14:31:17,178 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\
 INFO 2021-11-19 14:31:18,232 autoreload:637 Watching for file changes with StatReloader
 INFO 2021-11-19 14:32:01,160 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\utils\ssh.py changed, reloading.
 INFO 2021-11-19 14:32:02,086 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-19 14:55:20,997 autoreload:251 F:\duanxinyi\uric\uricenv\Lib\site-packages\simpleui\__init__.py changed, reloading.
+INFO 2021-11-19 14:55:22,026 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 10:36:12,371 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 10:41:20,080 basehttp:161 "OPTIONS /users/login/ HTTP/1.1" 200 0
+INFO 2021-11-23 10:41:20,389 basehttp:161 "POST /users/login/ HTTP/1.1" 200 201
+INFO 2021-11-23 10:41:23,737 basehttp:161 "OPTIONS /host/categorys HTTP/1.1" 200 0
+INFO 2021-11-23 10:41:23,738 basehttp:161 "OPTIONS /host/list HTTP/1.1" 200 0
+INFO 2021-11-23 10:41:23,793 basehttp:161 "OPTIONS /host/categorys/ HTTP/1.1" 200 0
+INFO 2021-11-23 10:41:23,808 basehttp:161 "OPTIONS /host/list/ HTTP/1.1" 200 0
+INFO 2021-11-23 10:41:24,023 basehttp:161 "GET /host/list/ HTTP/1.1" 200 168
+INFO 2021-11-23 10:41:24,053 basehttp:161 "GET /host/categorys/ HTTP/1.1" 200 140
+WARNING 2021-11-23 10:41:51,857 log:230 Unauthorized: /host/host_excel
+WARNING 2021-11-23 10:41:51,858 basehttp:161 "GET /host/host_excel HTTP/1.1" 401 5097
+INFO 2021-11-23 10:41:51,887 basehttp:161 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,887 basehttp:161 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,888 basehttp:161 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,895 basehttp:161 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,896 basehttp:161 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,896 basehttp:161 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,898 basehttp:161 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,910 basehttp:161 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,911 basehttp:161 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,912 basehttp:161 "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+INFO 2021-11-23 10:41:51,916 basehttp:161 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+WARNING 2021-11-23 10:41:52,173 log:230 Not Found: /favicon.ico
+WARNING 2021-11-23 10:41:52,174 basehttp:161 "GET /favicon.ico HTTP/1.1" 404 2474
+WARNING 2021-11-23 10:41:57,818 log:230 Unauthorized: /host/host_excel
+WARNING 2021-11-23 10:41:57,819 basehttp:161 "GET /host/host_excel HTTP/1.1" 401 5097
+INFO 2021-11-23 10:46:35,047 basehttp:161 "GET /host/categorys/ HTTP/1.1" 200 140
+INFO 2021-11-23 10:46:35,059 basehttp:161 "GET /host/list/ HTTP/1.1" 200 168
+INFO 2021-11-23 10:48:44,823 basehttp:161 "GET /host/list/ HTTP/1.1" 200 168
+INFO 2021-11-23 10:48:44,838 basehttp:161 "GET /host/categorys/ HTTP/1.1" 200 140
+INFO 2021-11-23 10:58:03,592 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\settings\dev.py changed, reloading.
+INFO 2021-11-23 11:15:36,905 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:17:15,347 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\apps.py changed, reloading.
+INFO 2021-11-23 11:17:16,041 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:18:06,433 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\apps.py changed, reloading.
+INFO 2021-11-23 11:18:07,086 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:18:23,686 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\apps.py changed, reloading.
+INFO 2021-11-23 11:18:24,384 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:18:50,207 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\apps.py changed, reloading.
+INFO 2021-11-23 11:18:50,877 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:19:14,621 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\apps.py changed, reloading.
+INFO 2021-11-23 11:19:15,692 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:19:55,561 runserver:147 HTTP POST /users/login/ 200 [0.19, 127.0.0.1:49432]
+INFO 2021-11-23 11:19:58,764 runserver:147 HTTP GET /host/categorys/ 200 [0.02, 127.0.0.1:49432]
+INFO 2021-11-23 11:19:58,787 runserver:147 HTTP GET /host/list/ 200 [0.04, 127.0.0.1:49436]
+INFO 2021-11-23 11:20:01,260 runserver:168 WebSocket HANDSHAKING /ws/ssh/1/ [127.0.0.1:49440]
+INFO 2021-11-23 11:20:01,389 runserver:166 WebSocket DISCONNECT /ws/ssh/1/ [127.0.0.1:49440]
+INFO 2021-11-23 11:23:41,581 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\consumer\middleware.py changed, reloading.
+INFO 2021-11-23 11:23:42,732 autoreload:637 Watching for file changes with StatReloader
+INFO 2021-11-23 11:28:27,673 runserver:147 HTTP GET /host/categorys/ 200 [0.04, 127.0.0.1:49682]
+INFO 2021-11-23 11:28:27,697 runserver:147 HTTP GET /host/list/ 200 [0.07, 127.0.0.1:49683]
+INFO 2021-11-23 11:28:30,054 runserver:168 WebSocket HANDSHAKING /ws/ssh/1/ [127.0.0.1:49688]
+INFO 2021-11-23 11:28:30,519 runserver:166 WebSocket DISCONNECT /ws/ssh/1/ [127.0.0.1:49688]
+INFO 2021-11-23 13:43:52,009 autoreload:251 F:\duanxinyi\uric\uric_api\uric_api\apps\host\routing.py changed, reloading.
+INFO 2021-11-23 13:43:53,190 autoreload:637 Watching for file changes with StatReloader

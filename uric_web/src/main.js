@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import settings from "./settings";
 import axios from "axios";
+import 'xterm/css/xterm.css'
+import 'xterm/lib/xterm'
 
 Vue.config.productionTip = false
 
