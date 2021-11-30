@@ -20,6 +20,6 @@ from rest_framework_jwt.views import obtain_jwt_token, verify_jwt_token, refresh
 urlpatterns = [
     path('categorys/', views.HostCategoryListAPIView.as_view()),  # 主机分类数据
     path('list/', views.HostModelViewSet.as_view({'get': 'list', 'post': 'create'})),  # 主机数据
-    path("host_excel", views.HostExcelView.as_view()),
+    # path("host_excel", views.HostExcelView.as_view()),
 
 ]

@@ -29,6 +29,9 @@ DEBUG = True
 # 允许客户端通过api.uric.cn这个域名访问Django项目
 ALLOWED_HOSTS = ["api.uric.cn", "127.0.0.1", ]
 
+# import sys
+#
+# sys.path.insert(0, str(BASE_DIR / 'apps'))
 
 # Application definition
 
@@ -45,6 +48,7 @@ INSTALLED_APPS = [
     'uric_api.apps.users',
     'uric_api.apps.host',
     'uric_api.apps.consumer',
+    'uric_api.apps.mtask',
     'channels',
 
 ]
@@ -90,6 +94,7 @@ WSGI_APPLICATION = 'uric_api.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
@@ -246,8 +251,8 @@ CHANNEL_LAYERS = {
     'default': {
         'BACKEND': 'channels_redis.core.RedisChannelLayer',
         'CONFIG': {
-            # "hosts": [('192.168.0.53', 6379)],
-            "hosts": ["redis://:duanwangyue12345678910@192.168.0.53:6379/3"],
+            "hosts": [('192.168.0.52', 6379)],
+            # "hosts": ["redis://:duanwangyue12345678910@192.168.0.53:6379/3"],
         },
     },
 }

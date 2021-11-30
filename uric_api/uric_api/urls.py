@@ -21,4 +21,5 @@ urlpatterns = [
     path("", include("uric_api.apps.home.urls")),
     path("users/", include("uric_api.apps.users.urls")),
     path("host/", include("uric_api.apps.host.urls")),
+    path("mtask/", include("uric_api.apps.mtask.urls")),
 ]

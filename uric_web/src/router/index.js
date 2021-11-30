@@ -30,6 +30,16 @@ const routes = [
         name: 'Console',
         component: () => import(/* webpackChunkName: "about" */ '../components/Console')
       },
+      {
+        path: 'multi_exec',
+        name: 'MultiExec',
+        component: () => import(/* webpackChunkName: "about" */ '../components/MultiExec')
+      },
+      {
+        path: 'template_manage',
+        name: 'TemplateManage',
+        component: () => import(/* webpackChunkName: "about" */ '../components/TemplateManage')
+      },
     ]
   },
 ]

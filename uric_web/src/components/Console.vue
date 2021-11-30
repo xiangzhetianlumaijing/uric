@@ -30,7 +30,8 @@ export default {
       });
 
       // 建立websocket
-      let ws = new WebSocket(`ws://api.uric.cn:8000/ws/ssh/${this.$route.params.id}/`);
+      // let ws = new WebSocket(`ws://api.uric.cn:8000/ws/ssh/${this.$route.params.id}/`);
+      let ws = new WebSocket(`ws://127.0.0.1:8000/ws/ssh/${this.$route.params.id}/`);
       var keyWord = '';  // 拼接用户输入的内容
       let msg = ""
       // 监听接收来自服务端响应的数据
